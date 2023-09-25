@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+.containne{
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+.turn, .restBtn{
+    background: rgb(119, 119, 119);
+    color: black;
+    width: 10%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px rgb(58, 42, 42) solid;
+    border-radius: 10px;
+}
+.gameGrid{
+    width: 25%;
+    height: 35%;
+    background: yellow;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px rgba(230,221,221,0.75);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted black;
+}
+.item:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.226) ;
+}
+.left{
+    border-left: none;
+}
+.top{
+    border-top: none;
+}
+.right{
+    border-right: none;
+}
+.down{
+    border-bottom: none;
+}
+.restBtn{
+    background: violet;
+    color: wheat;
+    cursor: pointer;
+}
